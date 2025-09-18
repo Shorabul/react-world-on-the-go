@@ -1,9 +1,9 @@
-import { Suspense } from 'react'
-import './App.css'
-import Countries from './components/countries/Countries'
+import { Suspense } from 'react';
+import './App.css';
+import Countries from './components/countries/Countries';
 
 const countriesPromise = fetch('https://openapi.programming-hero.com/api/all')
-  .then(res => res.json())
+  .then(res => res.json());
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
       </Suspense>
 
     </>
-  )
+  );
 }
 
-export default App
+export default App;
